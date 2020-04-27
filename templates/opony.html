@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'nowy.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<a href="{% url 'nowa_opona' %}">nowa opona</a>
+{% if opony|length == 0%}
+        <h2>brak opon</h2>
+    {% else %}
+        <h2>Ilosc opon w bazie: {{ opony |length}}</h2>
+
+    {% for opona in opony %}
+        <h2> {{ opona }}</h2>
+        <p>{{ opona.opis}}</p>
+        <a href="{% url 'edytuj_opone' opona.id %}">Edytuj</a>
+        <a href="{% url 'usun_opone' opona.id %}">Usun</a>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
