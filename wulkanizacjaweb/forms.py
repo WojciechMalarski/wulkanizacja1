@@ -5,3 +5,4 @@ class OponaForm(ModelForm):
     class Meta:
         model = Opony
         fields = ['producent', 'szerokosc','profil','srednica','opis','rok_produkcji', 'zdjecie']
+

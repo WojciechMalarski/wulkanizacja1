@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
+
+
 class Opony(models.Model):
     producent = models.CharField(max_length=32, blank=False)
     szerokosc = models.PositiveSmallIntegerField(default=0)
@@ -15,3 +17,11 @@ class Opony(models.Model):
 
     def producent_rok_produkcji(self):
         return "{} ({})" .format(self.producent, self.rok_produkcji)
+
+class Koszyk(models.Model):
+    lista_zakupow = Opony
+
+
+    def __str__(self):
+        return self.lista_zakupow()
+

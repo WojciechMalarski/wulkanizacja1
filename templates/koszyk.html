@@ -4,10 +4,10 @@
 {% block producent%} Lista opon {% endblock %}
 
 {% block strona%}
-    <h1>Czy na pewno chcesz usunac ten {{ opona.producent }} film?</h1>
+
+    <h1>twoje zakupy to: {{ koszyk }} </h1>
     <form method="post">
         {% csrf_token %}
-        <button type="submit">Usun</button>
 
     </form>
 {% endblock %}
