@@ -1,5 +1,5 @@
+{% include "navbar.html" %}
 
-{% extends 'glowny.html' %}
 
 {% block producent%} Lista opon {% endblock %}
 
@@ -7,7 +7,7 @@
     <h1>Czy na pewno chcesz usunac ten {{ opona.producent }} film?</h1>
     <form method="post">
         {% csrf_token %}
-        <button type="submit">Usun</button>
+        <button type="submit">Tak Usuń !! </button>
 
     </form>
 {% endblock %}

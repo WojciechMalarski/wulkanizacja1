@@ -11,18 +11,15 @@
 {% bootstrap_css %}
 {% bootstrap_javascript %}
 
-
+{% include "navbar.html" %}
 
 
 
 
 {% block strona%}
-    {% if user.is_authenticated %}
-        Witaj {{user.username}}<br>
-        <a href="{% url 'logout' %}">wyloguj sie</a>
-    {% else %}
-        <a href="{% url 'login' %}">zaloguj sie</a>
-    {% endif %}
+
+
+
     <a href="{% url 'nowa_opona' %}">nowa opona</a>
     {% if opony|length == 0%}
         <h2>brak opon</h2>

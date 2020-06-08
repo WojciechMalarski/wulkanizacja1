@@ -1,5 +1,17 @@
 
- {% include "../navbar.html" %}
+{% include "../navbar.html" %}
+
+
+ 			<center>
+					<div class="alert alert-danger">
+					  <h4 class="form-signin-heading">Nie jesteś zalogowany lub zostałeś wylogowany</h4>
+					</div>
+					<h2 class="alert alert-info">Proszę się zalogować</h2>
+			</center>
+
+
+
+
 
     <form method="post">
         {% csrf_token%}

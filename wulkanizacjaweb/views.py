@@ -33,7 +33,7 @@ def edytuj_opone(request, id):
 @login_required
 def usun_opone(request, id):
     opona = get_object_or_404(Opony, pk=id)
- 
+
     if request.method =="POST":
         opona.delete()
         return redirect(wszystkie_opony)
@@ -48,4 +48,8 @@ def kup_opone(request, id):
         kupiona_opona.save()
         return redirect(wszystkie_opony)
     return render(request, 'koszyk.html', {'koszyk': kupiona_opona})
+
+def index(request, id):
+
+    return render(request, 'glowny.html')
 
