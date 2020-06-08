@@ -18,7 +18,7 @@
 
 {% block strona%}
 
-
+<div style="text-align: center;">
 
     <a href="{% url 'nowa_opona' %}">nowa opona</a>
     {% if opony|length == 0%}
@@ -35,5 +35,7 @@
     {% endfor %}
 
 {% endif %}
+
+    <div/>
 
 {% endblock %}
