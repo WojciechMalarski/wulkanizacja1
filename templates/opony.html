@@ -1,15 +1,6 @@
 {% extends 'glowny.html' %}
 {% block producent%} Lista opon {% endblock %}
 
-{# Load the tag library #}
-{% load bootstrap4 %}
-
-{# Display a form #}
-
-
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
 
 {% include "navbar.html" %}
 
@@ -30,6 +21,7 @@
         <h2> {{ opona }}</h2>
         <p>{{ opona.opis}}</p>
         <img src="{{ opona.zdjecie}}">
+
         <a href="{% url 'kup_opone' opona.id %}">Kup</a>
         <a href="{% url 'edytuj_opone' opona.id %}">Edytuj</a>
         <a href="{% url 'usun_opone' opona.id %}">Usun</a>
