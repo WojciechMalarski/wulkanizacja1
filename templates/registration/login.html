@@ -12,12 +12,16 @@
 
 
 
+	<div style="text-align: center;">
+		    <form class="alert alert-info" method="post">
+				{% csrf_token%}
+				{{form}}<br>
+				<button class="btn btn-lg btn btn-success btn-sm" type= "submit"> Zaloguj</button>
+			</form>
 
-    <form method="post">
-        {% csrf_token%}
-        {{form}}
-        <button type= "submit"> Zaloguj</button>
-    </form>
+
+	</div>
+
 
 
 

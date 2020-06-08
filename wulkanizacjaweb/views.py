@@ -49,7 +49,5 @@ def kup_opone(request, id):
         return redirect(wszystkie_opony)
     return render(request, 'koszyk.html', {'koszyk': kupiona_opona})
 
-def index(request, id):
 
-    return render(request, 'glowny.html')
 
