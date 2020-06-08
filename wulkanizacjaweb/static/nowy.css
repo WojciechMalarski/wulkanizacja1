@@ -3,9 +3,24 @@ html {
 }
 body {
 
-    background-clip: #ffc419;
+    background-clip: red;
 }
 
+
+/* napis Witaj.. */
+.collapse h4{
+
+    position: center;
+    padding-right: 25px;
+    color: #ffffff !important;
+
+}
+.collapse a{
+
+    color: #ffffff !important;
+
+
+}
 .navbar-brand
 {
     position: absolute;
@@ -13,6 +28,7 @@ body {
     left: 0;
     text-align: center;
     margin:0 auto;
+
 }
 .navbar-toggle {
     z-index:3;

@@ -1,14 +1,5 @@
 {% load static %}
 
-{# Load the tag library #}
-{% load bootstrap4 %}
-
-{# Display a form #}
-
-
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
 
 
 
@@ -36,7 +27,6 @@
                     <li class="btn btn-outline-warning"><a class="nav-link" href="#"> Mapka dojazdu </a></li>
                     <li class="btn btn-outline-warning"><a class="nav-link" href="#"> Kontakt </a></li>
                     <li class="btn btn-outline-warning"><a class="nav-link" href="#"> Rejestracja na wizyte </a></li>
-
                 </ul>
                     {% if user.is_authenticated %}<br>
                     <h4>Witaj {{user.username}} <h4/>
