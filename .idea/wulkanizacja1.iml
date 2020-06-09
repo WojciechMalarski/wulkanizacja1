@@ -8,14 +8,15 @@
       <sourceFolder url="file://$MODULE_DIR$/.idea/inspectionProfiles" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/templates" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/templates/registration" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/Lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/Scripts" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wulkanizacja" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wulkanizacjaweb" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/moje_media" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Include" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (venv)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
