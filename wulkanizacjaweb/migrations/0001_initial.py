@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('srednica', models.PositiveSmallIntegerField(default=0)),
                 ('opis', models.TextField(blank=True, default='')),
                 ('rok_produkcji', models.DateField(default=2000)),
-                ('zdjecie', models.ImageField(blank=True, null=True, upload_to='zdjecia')),
+                ('zdjecie', models.ImageField(blank=True, null=True, upload_to='moje_media')),
             ],
         ),
     ]

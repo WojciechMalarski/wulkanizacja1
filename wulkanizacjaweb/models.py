@@ -10,7 +10,7 @@ class Opony(models.Model):
     srednica = models.PositiveSmallIntegerField(default=0)
     opis = models.TextField(blank=True, default="")
     rok_produkcji = models.DateField(default=2000)
-    zdjecie = models.ImageField(upload_to="../zdjecia/", null=False, blank=False)
+    zdjecie = models.ImageField(upload_to="plakaty", null=True, blank=True)
 
     def __str__(self):
         return self.producent_rok_produkcji()

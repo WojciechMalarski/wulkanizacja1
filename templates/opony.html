@@ -20,7 +20,7 @@
     {% for opona in opony %}
         <h2> {{ opona }}</h2>
         <p>{{ opona.opis}}</p>
-        <img src="{{ opona.zdjecie}}">
+        <img src=" /media/{{opona.zdjecie}}" class="opona-plakat">
 
         <a href="{% url 'kup_opone' opona.id %}">Kup</a>
         <a href="{% url 'edytuj_opone' opona.id %}">Edytuj</a>
