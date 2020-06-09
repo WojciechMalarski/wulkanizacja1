@@ -50,4 +50,10 @@ def kup_opone(request, id):
     return render(request, 'koszyk.html', {'koszyk': kupiona_opona})
 
 
+def rejestracja(request, id):
+
+    if request.method =="POST":
+        return render(request, 'rejestracja.html', {'opony'})
+
+
 
