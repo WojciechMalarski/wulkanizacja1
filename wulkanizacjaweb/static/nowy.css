@@ -7,8 +7,15 @@ body {
 }
 
 
-#content {
-     position: center;
+.content_center{
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 950px;
+    padding-top: 20px;
+    /* załamanie tekstu*/
+    word-wrap:break-word;
+    max-width:100%;
 }
 
 /* napis Witaj.. */
