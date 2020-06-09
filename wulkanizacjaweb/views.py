@@ -51,9 +51,7 @@ def kup_opone(request, id):
 
 
 def rejestracja(request, id):
-
-    if request.method =="POST":
-        return render(request, 'rejestracja.html', {'opony'})
+    return render(request, 'rejestracja.html', {'opony'})
 
 
 
