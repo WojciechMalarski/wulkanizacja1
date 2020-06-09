@@ -32,7 +32,7 @@
                     <h4>Witaj {{user.username}} <h4/>
                     <a class="btn btn-lg btn btn-danger btn-sm" href="{% url 'logout' %}"> wyloguj sie</a>
                     {% else %}
-                    <a class="btn btn-lg btn btn-success btn-sm"  href="{% url 'login' %}">zaloguj sie</a>
+                    <a class="btn btn-lg btn btn-success btn-sm glyphicon-log-in"  href="{% url 'login' %}">zaloguj sie</a>
                     {% endif %}
             </div>
     </nav>
