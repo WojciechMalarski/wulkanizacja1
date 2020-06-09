@@ -9,5 +9,8 @@ urlpatterns = [
     path('usun/<int:id>', usun_opone, name="usun_opone"),
     path('kup/<int:id>', kup_opone, name="kup_opone"),
     path('rejestracja/', rejestracja, name="rejestracja"),
+
+
+    #path('', views.index, name='index'),
     #path('index/', index, name="index"),
 ]

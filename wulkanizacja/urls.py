@@ -23,7 +23,10 @@ urlpatterns = [
     path('opony/', include('wulkanizacjaweb.urls')),
     path('login/', auth_views.LoginView.as_view(), name="login"),
     path('logout/', auth_views.LogoutView.as_view(), name="logout"),
-    path('rejestracja/', views.detail, name='rejestracja'),
+
+
+    #path('', views.index, name='index'),
+    #path('rejestracja/', views.rejestracja)
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
